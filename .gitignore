@@ -1,0 +1,6 @@
+node_modules/
+.env
+
+# Output files written by router.ts when it runs
+routed.json
+metrics-*.json

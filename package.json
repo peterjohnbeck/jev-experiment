@@ -1,0 +1,21 @@
+{
+  "name": "jev-experiment",
+  "version": "1.0.0",
+  "description": "A support-ticket router built on JEV (TypeSafe AI's decision model) via the Vercel AI Gateway, with batch and real-time simulation modes.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "example": "tsx --env-file=.env jev.ts",
+    "start": "tsx --env-file=.env router.ts batch",
+    "realtime": "tsx --env-file=.env router.ts realtime",
+    "typecheck": "tsc -p ."
+  },
+  "dependencies": {
+    "ai": "^7.0.127",
+    "tsx": "^4.23.15"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
